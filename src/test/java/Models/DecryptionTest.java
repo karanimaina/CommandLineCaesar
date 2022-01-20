@@ -19,4 +19,9 @@ class DecryptionTest {
     void GetDecryptMessage_returnsDecryptMessage_String() {
         assertEquals("DecryptMessage",decryption.getDecryptMessage());
     }
+    @Test
+    void GetShiftKey_returnsShiftKey_Int() {
+        assertEquals(3,decryption.getShiftKey());
+    }
+
 }
