@@ -15,4 +15,13 @@ class DecryptionTest {
     public void Decryption_InstanceOf_true() {
         assertEquals(true, decryption instanceof  Decryption);
     }
+    @Test
+    void GetDecryptMessage_returnsDecryptMessage_String() {
+        assertEquals("DecryptMessage",decryption.getDecryptMessage());
+    }
+    @Test
+    void GetShiftKey_returnsShiftKey_Int() {
+        assertEquals(3,decryption.getShiftKey());
+    }
+
 }
