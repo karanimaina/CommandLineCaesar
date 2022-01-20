@@ -15,4 +15,8 @@ class DecryptionTest {
     public void Decryption_InstanceOf_true() {
         assertEquals(true, decryption instanceof  Decryption);
     }
+    @Test
+    void GetDecryptMessage_returnsDecryptMessage_String() {
+        assertEquals("DecryptMessage",decryption.getDecryptMessage());
+    }
 }
