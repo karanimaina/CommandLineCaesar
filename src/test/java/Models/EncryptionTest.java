@@ -19,6 +19,11 @@ class EncryptionTest {
     public void GetEncryptText_GetsEncryptedText_String() {
         assertEquals("MORINGA", encryption.getMessage());
     }
+    @Test
+    public void GetShift_GetsTHEShift_int() {
+        assertEquals(2, encryption.getShiftKey() );
+    }
 
 
 }
+
