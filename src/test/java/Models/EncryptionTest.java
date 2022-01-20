@@ -11,14 +11,17 @@ class EncryptionTest {
     void setUp() {
         encryption = new Encryption("MORINGA",2);
     }
+
     @Test
     public void Encryption_instanceOf_true() {
         assertEquals(true, encryption instanceof Encryption);
     }
+
     @Test
     public void GetEncryptText_GetsEncryptedText_String() {
         assertEquals("MORINGA", encryption.getMessage());
     }
+
     @Test
     public void GetShift_GetsTHEShift_int() {
         assertEquals(2, encryption.getShiftKey() );
@@ -26,4 +29,3 @@ class EncryptionTest {
 
 
 }
-

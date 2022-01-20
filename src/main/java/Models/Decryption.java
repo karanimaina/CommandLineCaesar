@@ -24,6 +24,7 @@ public class Decryption {
     public String getStringMessage() {
         return StringMessage;
     }
+
     public String decrypt(){
         decryptMessage =decryptMessage.toLowerCase();
         StringMessage = "";
@@ -40,4 +41,5 @@ public class Decryption {
 
     }
 }
-}
+
+
