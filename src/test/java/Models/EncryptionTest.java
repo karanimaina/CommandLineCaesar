@@ -15,5 +15,10 @@ class EncryptionTest {
     public void Encryption_instanceOf_true() {
         assertEquals(true, encryption instanceof Encryption);
     }
+    @Test
+    public void GetEncryptText_GetsEncryptedText_String() {
+        assertEquals("MORINGA", encryption.getMessage());
+    }
+
 
 }
